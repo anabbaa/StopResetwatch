@@ -15,15 +15,16 @@
         <span class="dots">:</span><span id="minutes">00</span ><span class="dots">:</span>
         <span id="hours">00</span></p>
         <button id="button-start" onclick="begin()">Start</button>
-        <button id="button-stop" onclick ="stopw()">Stop</button>
-        <button id="button-reset" onclick="resetw()">Reset</button>
+        <button id="button-stop" onclick ="stopb()">Stop</button>
+        <button id="button-reset" onclick="resetb()">Reset</button>
         </div>
         </div> 
 </body>
 <script>
     let start = document.getElementById("button-start");
-    let stop = document.getElementById("button-stop");
-    let reset = document.getElementById("button-reset");
+    let stopbu = document.getElementById("button-stop");
+    let resetbu = document.getElementById("button-reset");
+
     let ten = document.getElementById("tens");
     let second = document.getElementById("seconds");
     let minute = document.getElementById("minutes");
@@ -37,8 +38,8 @@
     
     function startTimer() {
         
-        miliSeconds++;
-        if (miliSeconds > 100){
+        miliSeconds++;0
+        if (miliSeconds > 40){
             seconds++;
             if(seconds < 10){
             seconds = "0" + seconds;
@@ -75,19 +76,22 @@
         }
 
     function begin (){
-        time = setInterval(startTimer, 100);
+        time = setInterval(startTimer, 40);
     }
-    function stopw (){
+    function stopb (){
 clearInterval(time);
     }
-    function resetw (){
+    function resetb (){
 clearInterval(time);
 ten.innerHTML = "00";
 second.innerHTML= "00";
 minute.innerHTML = "00";
 hour.innerHTML = "00";
     }
-    start.addEventListener('click', begin);
-    reset.addEventListener("click", resetw);
+    //start.addEventListener('click', begin);
+    //stopbu.addEventListener("click", stopb);
+    //resetbu.addEventListener("click", resetb);
+    
+    
 </script>
 </html>
