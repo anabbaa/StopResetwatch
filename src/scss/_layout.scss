@@ -16,7 +16,7 @@
     width: 2vw;
     height: 2vh;
     background-color: black;
-    padding: 0 0 2vh 2vh;
+    padding:  0 0vh 2vh 2vh;
     
     text-align: center;
     
@@ -27,7 +27,7 @@ button{
     color: red;
     text-align: center;
     font-size: 2rem;
-    margin-left: 4vw;
+    margin-left: 10vw;
     margin-top: 8vh;
     font-weight: bolder;
     background-color: rgb(0, 195, 255);
@@ -41,7 +41,49 @@ button{
 }
 .container{
     height: 22vh;
-    width: 55vw;
+    width: 78vw;
     background-color: chocolate;
     border: 2rem solid yellow;
+    padding-left:  2vw;
+  
 }
+.mili{
+position: relative;
+top: 8vh ;
+right:  11vw;
+font-size: 1.5rem;
+color: red;
+font-weight: bolder;
+}
+.sec{
+
+position: relative;
+top: 8vh ;
+right:  10vw;
+font-size: 1.5rem;
+color: red;
+font-weight: bolder;
+
+}
+.hour{
+
+    position: relative;
+    top: 8vh ;
+    right:  7vw;
+    font-size: 1.5rem;
+    color: red;
+font-weight: bolder;
+
+    }
+
+.min{
+
+    position: relative;
+    top: 8vh ;
+    right:  10vw;
+    font-size: 1.5rem;
+    color: red;
+font-weight: bolder;
+
+    }
+
